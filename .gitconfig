@@ -1,0 +1,29 @@
+[user]
+	email = __________________
+	name = __________________
+[push]
+	default = simple
+[core]
+	editor = 'C:/Program Files (x86)/Notepad++/notepad++.exe' -multiInst -notabbar -nosession -noPlugin
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true
+[alias]
+    a = add
+	co = commit
+    com = commit -m
+    st = status
+    c = checkout
+	cl = clone
+	ac = !git add . && git commit -am
+	rh = reset --hard
+	p = push
+	mdm = merge develop master
+	log1 = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
+	log2 = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all
+	logl = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat
+	github = !git config user.email __________________ && git config user.name __________________
+	bitbucket = !git config user.email __________________ && git config user.name __________________
+[credential]
+	helper = wincred
