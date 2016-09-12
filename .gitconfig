@@ -14,13 +14,13 @@
 	smudge = git-lfs smudge %f
 	required = true
 [alias]
-    a = add
+	a = add
 	co = commit
-    com = commit -m
-    st = status
-    c = checkout
+	com = commit -m
+	coma = commit -am
+	st = status
+	c = checkout
 	cl = clone
-	ac = !git add . && git commit -am
 	rh = reset --hard
 	p = push
 	mdm = merge develop master
