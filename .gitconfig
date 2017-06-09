@@ -21,6 +21,7 @@
 	c = checkout
 	cl = clone
 	rh = reset --hard
+	ri = rebase -i
 	p = push
 	m = merge
 
