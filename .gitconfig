@@ -4,7 +4,7 @@
 [push]
 	default = simple
 [core]
-	editor = 'C:/Program Files (x86)/Notepad++/notepad++.exe' -multiInst -notabbar -nosession -noPlugin
+	editor = 'C:/Program Files/Notepad++/notepad++.exe' -multiInst -notabbar -nosession -noPlugin
 	preloadindex = true
 	fscache = true
 [gc]
@@ -14,27 +14,26 @@
 	smudge = git-lfs smudge %f
 	required = true
 [alias]
-	a = add
+	# Base commands
 	com = commit -m
-	coma = commit --amend
 	s = status
 	c = checkout
-	cl = clone
-	rh = reset --hard
 	ri = rebase -i
-	p = push
-	m = merge
+	a = add
+	b = branch
 
-	wip = !git add . && git commit -am "WIP"
-
-	graph = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all
+	# tree log
+	tree = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all
+	# compact log
 	ls = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
+	# long log
 	ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat
+	
+	# Last commit, detailed
 	last = diff --cached HEAD^
 	
-	github = !git config user.email __________________ && git config user.name __________________
-	bitbucket = !git config user.email __________________ && git config user.name __________________
-	
+	# List all aliases
 	aliases = !git config -l | grep alias | cut -c 7-
+	
 [credential]
 	helper = wincred
