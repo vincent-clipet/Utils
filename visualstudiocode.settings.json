@@ -1,16 +1,20 @@
 {
     "workbench.colorTheme": "Monokai",
-    "telemetry.telemetryLevel": "off",
-    "editor.insertSpaces": false,
-
-    "[python]": {
-        "editor.insertSpaces": true,
-        "editor.tabSize": 4  
-    },
     "workbench.tree.indent": 20,
     "workbench.colorCustomizations": {
         "tree.indentGuidesStroke": "#ffff11"
     },
+
+    "telemetry.telemetryLevel": "off",
+    
     "git.openRepositoryInParentFolders": "never",
-    "editor.minimap.autohide": true
+
+    "editor.minimap.autohide": true,
+    "editor.fontFamily": "Fira Code",
+    "editor.fontLigatures": "'cv02', 'ss05', 'ss03'",
+    "editor.insertSpaces": false,
+    "[python]": {
+        "editor.insertSpaces": true,
+        "editor.tabSize": 4  
+    }
 }
