@@ -1,3 +1,9 @@
+### Move to the real /home
+
+cd ~/documents/git/
+
+
+
 ### Git bash prompt
 
 # 1-liner : export PS1="\n\t \[\033[32m\]\w\[\033[33m\]\$(GIT_PS1_SHOWUNTRACKEDFILES=1 GIT_PS1_SHOWDIRTYSTATE=1 __git_ps1)\[\033[00m\] $ "
@@ -11,12 +17,6 @@ PS1_LOCATION=' \[\033[01;34m\]`pwd | sed "s#\(/[^/]\{1,\}/[^/]\{1,\}/[^/]\{1,\}/
 PS1_BRANCH=' \[\033[00;33m\]($(git_branch))\[\033[00m\] \$ '
 PS1=$PS1_TIME$USER$PS1_LOCATION$PS1_BRANCH
 #PS1=$PS1_TIME$USER@$PS1_HOST$PS1_LOCATION$PS1_BRANCH
-
-
-
-### github_activity
-
-alias activity="/mnt/f/21_GIT/github_activity/run.sh"
 
 
 
