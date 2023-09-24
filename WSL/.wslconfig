@@ -1,0 +1,5 @@
+[wsl2]
+memory=4GB # How much memory to assign to the WSL2 VM.
+swap=4GB
+swapfile=F:\\96_CACHE\\WSL\\wsl-swap.vhdx
+processors=2 # How many processors to assign to the WSL2 VM.
