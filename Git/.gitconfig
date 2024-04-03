@@ -34,8 +34,11 @@
 	# Last commit, detailed
 	last = diff --cached HEAD^
 
-	# Commit everything & push, fast
-	wip = "!git add . && git com 'wip' && git push"
+	# Commit everything fast
+	wip = "!git add . && git com 'wip'"
+
+	# Merge develop into master, and push
+	mdm = "!git checkout develop && git pull && git checkout main && git pull && git merge develop && git push && git checkout develop"
 
 	# Commit difference between current branch and its remote counterpart
 	preview = "!git fetch && echo '\n---------- Remote only (pull) ----------' && git log --oneline ..origin/$(git rev-parse --abbrev-ref HEAD) && echo '\n---------- Local only (push) ----------' && git log --oneline origin/$(git rev-parse --abbrev-ref HEAD).. && echo"
