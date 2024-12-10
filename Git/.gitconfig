@@ -21,6 +21,9 @@
 	c = checkout
 	ri = rebase -i
 	ri2 = rebase -i HEAD~2
+	ri3 = rebase -i HEAD~3
+	ri4 = rebase -i HEAD~4
+	ri5 = rebase -i HEAD~5
 	a = add
 	b = branch
 
@@ -38,7 +41,10 @@
 	wip = "!git add . && git com 'wip'"
 
 	# Merge develop into master, and push
-	mdm = "!git checkout develop && git pull && git checkout main && git pull && git merge develop && git push && git checkout develop"
+	mdm = "!git checkout develop && git pull && git push && git checkout main && git pull && git merge develop && git push && git checkout develop"
+
+	# Merge wip into develop, and push
+	mwd = "!git checkout wip && git pull && git push && git checkout develop && git pull && git merge wip && git push && git checkout wip"
 
 	# Commit difference between current branch and its remote counterpart
 	preview = "!git fetch && echo '\n---------- Remote only (pull) ----------' && git log --oneline ..origin/$(git rev-parse --abbrev-ref HEAD) && echo '\n---------- Local only (push) ----------' && git log --oneline origin/$(git rev-parse --abbrev-ref HEAD).. && echo"
