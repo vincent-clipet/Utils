@@ -37,6 +37,11 @@ PS1=$PS1_TIME$USER$PS1_LOCATION$PS1_BRANCH
 
 
 
+### Timestamps for "history" command
+HISTTIMEFORMAT="%F %T "
+
+
+
 ### NVM
 
 export NVM_DIR="$HOME/.nvm"
