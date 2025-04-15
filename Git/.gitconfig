@@ -4,7 +4,6 @@
 [push]
 	default = simple
 [core]
-	# editor = 'C:/Program Files/Notepad++/notepad++.exe' -multiInst -notabbar -nosession -noPlugin
 	editor = code --wait
 	preloadindex = true
 	fscache = true
@@ -42,6 +41,7 @@
 
 	# Merge develop into master, and push
 	mdm = "!git checkout develop && git pull && git push && git checkout main && git pull && git merge develop && git push && git checkout develop"
+	mdm2 = "!git checkout develop && git pull && git push && git checkout master && git pull && git merge develop && git push && git checkout develop"
 
 	# Merge wip into develop, and push
 	mwd = "!git checkout wip && git pull && git push && git checkout develop && git pull && git merge wip && git push && git checkout wip"

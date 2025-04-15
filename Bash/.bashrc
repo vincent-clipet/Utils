@@ -52,4 +52,8 @@ export NVM_DIR="$HOME/.nvm"
 
 ### JetBrains
 
+alias webstorm="webstorm64.exe"
 alias ws="webstorm64.exe"
+alias rubymine="rubymine64.exe"
+alias rbm="rubymine64.exe"
+alias phpstorm="phpstorm64.exe"
